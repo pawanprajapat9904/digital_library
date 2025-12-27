@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="library" id="library">
+    <div class="menu-bar">
+      <div class="left-mb">
+         <h1>Welcome to the Library</h1>
+      </div>
+      <div class="right-mb">
+          <button id="mode-toggle"></button>
+          <audio id="clickSound" src="https://commondatastorage.googleapis.com/codeskulptor-assets/week7-button.m4a" preload="auto"></audio>
+          
+          <button id="eye-comfort-toggle">Eye Comfort Mode</button>
+          <input type="search" id="menu-search" oninput="inputChangeEvent()" placeholder="Search here...">
+      </div>
+    </div>
+
+    <!-- Science Stream -->
+     <div class="library-all-books" id="LibraryAllBooks">
+     </div>
+    
+  </div>
+  
+
+  <!-- Book View Section -->
+  <div id="book-view" class="book-view hidden">
+    <button id="close-pdf" onclick="closeBook()">Close PDF</button>
+    <iframe id="pdf-viewer" src="" frameborder="0"></iframe>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
